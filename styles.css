@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    color: #FBFFFE;
+    letter-spacing: 1px;
+}
+/******************************************************************************************************************************************************************************/
+.mainBox{
+    background: #353D4D;
+    height: 100vh;
+}
+
+.containerBox{    
+    height: 100vh;
+}
+
+.rowBox{
+    width: 75%;
+    height: 80%;
+}
+/******************************************************************************************************************************************************************************/
+.infoPrimary{    
+    /*background-image: url("https://res.cloudinary.com/dthpuldpm/image/upload/v1672581671/Weather%20App/clearSky_hgy6ev.jpg");*/
+    background-size: 225%;
+    background-position: 40% 65%;
+    border-radius: 40px;
+    height: 75vh;
+    position: relative;
+    z-index: 1;
+}
+.rowPrinc{
+    position: absolute;
+    z-index: 3;
+    height: 75vh;
+}
+
+.infoPrimaryUP>h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.infoPrimaryUP>p{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.infoPrimaryUP>span{
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.capa{
+    background: linear-gradient(90deg, rgba(110, 230, 241, 0.386) 0%, rgba(99, 173, 233, 0.448) 53%, rgba(86, 96, 231, 0.454) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    right: 0px;    
+}
+/******************************************************************************************************************************************************************************/
+.table>tbody>tr>td{
+    border: none;
+}
+.infoSecondary{
+    height: 50vh;
+    background-color: #212932;
+    border-radius: 0px 40px 40px 0px;
+}
+
+.weatherIcon{
+    width: 16%;
+}
+
+.infoPrimaryDown>h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.infoPrimaryDown>h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+/****************************************************************************************************************************************************************************/
+.infoTable{
+    font-weight: bolder;
+}
+
+.btnModal{
+    width: 74% !important;
+    border: none !important;
+    background: linear-gradient(90deg, rgba(110,229,241,1) 0%, rgba(99,173,233,1) 53%, rgba(86,96,231,1) 100%) !important;
+    border-radius: 10px 10px 10px 10px !important;
+    color: #FBFFFE !important;
+    font-weight: bolder !important;
+}
+
+.btnModal:hover{
+    background: linear-gradient(90deg, rgb(98, 205, 215) 0%, rgb(92, 160, 215) 53%, rgb(74, 82, 199) 100%) !important;
+
+}
+
+.btnModal:active{
+    background: linear-gradient(90deg, rgb(78, 163, 171) 0%, rgb(69, 119, 159) 53%, rgb(59, 66, 157) 100%) !important;
+
+}
+
+.error{
+    color: rgb(189, 66, 66);
+    font-weight: bolder;
+}
+
+.infoSec{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.modalBox{
+    background-color: #212932;
+    box-shadow: 0px -1px 29px -1px rgba(255, 255, 255, 0.609);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.formCiudad{
+    background-color: #b8d1ed !important;
+    border: 1px solid #2e3945 !important;
+}
+
+.formCiudad:focus{
+    box-shadow: none !important;
+}
+
+.firmaBox{
+    position: absolute;
+    top: 97%;
+}
+
+.firma{
+    color: #7c7c7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.firma>a{
+    color: #7c7c7c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.firma>a:hover{
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+/****************************************************************************************************************************************************************************/
+@media (max-width: 1399px){
+
+    .infoPrimary{
+        background-size: 250%;
+        background-position: 50% 65%;
+    }
+
+}
+
+@media (max-width: 1199px){
+
+    .infoPrimary{
+        background-size: 275%;
+        background-position: 50% 65%;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .infoPrimary{
+        border-radius: 40px 40px 0px 0px;
+        height: 50%;    
+    }
+
+    .capa{
+        border-radius: 40px 40px 0px 0px;    
+    }
+    
+    .infoSecondary{
+        height: 50%;
+        border-radius: 0px 0px 40px 40px;
+        margin-top: 0px !important;
+    }
+    
+    .infoSec{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .infoPrimary{
+        background-size: 275%;
+        background-position: 50% 85%;
+    }
+
+    .rowPrinc{
+        height: 41vh;
+    }
+
+}
+
+@media (max-width: 417px){
+
+    .textPrim{
+        font-size: 15px !important;
+    }
+    
+    .textSec{
+        font-size: 12px;
+    }
+
+    .infoSec{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+}
+
+@media (max-width: 350px){
+    
+    .textSec{
+        font-size: 11px;
+    }
+
+    .infoSec{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+}
